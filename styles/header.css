@@ -1,0 +1,190 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 28rem;
+    background-image: url(../img/header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header .top-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 8rem 10px 8rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #0000001d;
+    border-radius: 0px 0px 10px 10px;
+}
+
+header .top-header .logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+header .top-header nav .contact {
+    background-color: white;
+    color: black;
+    padding: 8px 8px 8px 8px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    transition: all .3s linear;
+    height: 35px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+header .top-header nav .contact:hover {
+    font-size: 13.5px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.227);
+}
+
+header .main-header {
+    display: flex;
+    width: 100%;
+    padding: 0px 8rem 0px 8rem;
+    margin-top: 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .main-header .texts {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+}
+
+header .main-header .texts h1 {
+    font-size: 1.8rem;
+}
+
+header .main-header .texts h1 span {
+    font-size: 1.8rem;
+    color: #207FEE;
+}
+
+header .main-header .texts span {
+    font-size: 1rem;
+}
+
+header .main-header .container-filters {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 40rem;
+    height: 14rem;
+    border-radius: 20px;
+    flex-direction: column;
+    gap: 17px;
+}
+
+header .main-header .container-filters .tipo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header .main-header .container-filters .tipo select {
+    border-radius: 10px;
+    border: none;
+    background-color: #EDEDED;
+    height: 45px;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+#select-tipo-imovel {
+    width: 50%;
+}
+
+#select-categoria-imovel {
+    width: 45%;
+}
+
+header .main-header .container-filters .tipo input {
+    border-radius: 10px;
+    border: none;
+    background-color: #EDEDED;
+    height: 45px;
+    font-size: 15px;
+    outline: none;
+    padding-left: 15px;
+}
+
+#input-bairro-cidade {
+    width: 370px;
+}
+
+header .main-header .container-filters .botao {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#buscarBtn {
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    gap: 8px;
+    background-color: #207FEE;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+#buscarBtn:hover {
+    background-color: #1557a2;
+}
+
+#limparFiltrosBtn {
+    width: 120px;
+    border-radius: 10px;
+    border: none;
+    height: 45px;
+    background-color: #000000;
+    font-size: 13px;
+    color: white;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    font-weight: 500;
+}
+
+#limparFiltrosBtn:hover {
+    background-color: #000000;
+    box-shadow: 10px 8px 10px rgba(0, 0, 0, 0.133);
+}

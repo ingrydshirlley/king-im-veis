@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Imóveis</title>
+    <script src="https://kit.fontawesome.com/98589b12b7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="shortcut icon" href="./img/crown-solid.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="logo">
+                <i class="fa-solid fa-crown"></i>
+                King Imóveis
+            </div>
+
+            <nav class="menu">
+                <a> <a href="https://wa.me/5511940762958?text=Oi,%20gostaria%20de%20conversar%20sobre%20os%20imóveis."
+                        target="_blank" class="contact">Contate-me</a>
+                </a>
+            </nav>
+        </div>
+
+        <div class="main-header">
+            <div class="texts">
+                <h1> Mais de 2 anos atuando
+                    no mercado <span>imobiliário</span>.
+                </h1>
+
+                <span>
+                    Especialistas em aluguel e venda de imóveis de alto
+                    padrão na região da grande São Paulo.
+                </span>
+            </div>
+
+            <div class="container-filters">
+                <div class="tipo">
+                    <select id="select-tipo-imovel">
+                        <option value="" disabled selected>Selecione o tipo</option>
+                        <option value="Compra">Compra</option>
+                        <option value="Aluguel">Aluguel</option>
+                    </select>
+
+                    <select id="select-categoria-imovel">
+                        <option value="" disabled selected>Selecione a categoria</option>
+                        <option value="Casa">Casa</option>
+                        <option value="Apartamento">Apartamento</option>
+                        <option value="Salão">Salão</option>
+                        <option value="Chácara">Chácara</option>
+                    </select>
+
+                    <input id="input-bairro-cidade" type="text" placeholder="Bairro ou cidade:">
+
+                    <button id="buscarBtn"> <span>Buscar</span> <i class="fa-solid fa-magnifying-glass"></i> </button>
+                </div>
+
+                <div class="botao">
+                    <button id="limparFiltrosBtn">Limpar filtros</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="app">
+        <button id="topo"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script src="apifake.js"></script>
+    <script src="casas.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
