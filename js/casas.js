@@ -4,7 +4,6 @@ function openModal(casa) {
 
     let carouselHTML = '';
 
-    //HTML para o carrossel de imagens
     if (casa.fotos && casa.fotos.length > 0) {
 
         carouselHTML += `<div id="imageCarousel" class="carousel">`;
@@ -38,7 +37,11 @@ function openModal(casa) {
     `;
 
     modalBody.innerHTML = modalHTML;
+    modal.style.opacity = '0'
     modal.style.display = 'flex';
+    setTimeout(() => {
+        modal.style.opacity = '1'; // Define a opacidade para 1 para suavizar a transição
+    }, 100); 
 }
 
 

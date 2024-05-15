@@ -188,3 +188,236 @@ header .main-header .container-filters .botao {
     background-color: #000000;
     box-shadow: 10px 8px 10px rgba(0, 0, 0, 0.133);
 }
+
+
+
+
+@media screen and (max-width: 1470px) {
+    header .top-header {
+        padding: 10px 7rem 10px 7rem;
+    }
+
+    header .main-header {
+        padding: 0px 7rem 0px 7rem;
+    }
+
+    header .main-header .container-filters {
+        padding: 30px;
+        width: 38rem;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    header .top-header {
+        padding: 10px 4rem 10px 4rem;
+    }
+
+    header .main-header {
+        padding: 0px 4rem 0px 4rem;
+    }
+
+    header .main-header .texts {
+        width: 35%;
+    }
+
+    header .main-header .texts h1 {
+        font-size: 1.5rem;
+    }
+
+    header .main-header .texts h1 span {
+        font-size: 1.5rem;
+    }
+
+    header .main-header .texts span {
+        font-size: .9rem;
+    }
+
+    header .main-header .container-filters {
+        padding: 20px;
+        width: 55%;
+        gap: 12px;
+    }
+
+    header .main-header .container-filters .tipo select {
+        height: 40px;
+        font-size: 12px;
+        padding-left: 3px;
+    }
+
+    header .main-header .container-filters .tipo input {
+        height: 40px;
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    #input-bairro-cidade {
+        width: 65%;
+    }
+
+    #buscarBtn {
+        height: 40px;
+        font-size: 12px;
+        width: 30%;
+    }
+
+    #limparFiltrosBtn {
+        height: 40px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    header {
+        height: 23rem;
+    }
+
+    header .top-header .logo {
+        font-size: 16px;
+    }
+
+    header .top-header nav .contact {
+        padding: 5px;
+        width: 120px;
+        height: 30px;
+    }
+
+    header .main-header .texts h1 {
+        font-size: 1.3rem;
+    }
+
+    header .main-header .texts h1 span {
+        font-size: 1.3rem;
+    }
+
+    header .main-header .texts span {
+        font-size: .8rem;
+    }
+
+    header .main-header .container-filters {
+        width: 55%;
+        gap: 12px;
+        height: 12rem;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    header .main-header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px 0rem 0px 0rem;
+        margin-top: 3.5rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    header .top-header .logo {
+        font-size: 14px;
+    }
+
+    header .top-header nav .contact {
+        padding: 3px;
+        width: 110px;
+        font-size: 12px;
+        height: 25px;
+    }
+
+    header .main-header .texts {
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    header .main-header .texts h1 {
+        font-size: 1.2rem;
+    }
+
+    header .main-header .texts h1 span {
+        font-size: 1.2rem;
+    }
+
+    header .main-header .texts span {
+        font-size: .9rem;
+    }
+
+    header .main-header .container-filters {
+        width: 70%;
+        gap: 10px;
+        height: 10rem;
+    }
+
+    header .main-header .container-filters .tipo select {
+        height: 35px;
+    }
+
+    header .main-header .container-filters .tipo input {
+        height: 35px;
+    }
+
+    #buscarBtn {
+        height: 35px;
+    }
+
+    #limparFiltrosBtn {
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    header .main-header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px 0rem 0px 0rem;
+        margin-top: 3.5rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    header .main-header .texts {
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    header .main-header .texts h1 {
+        font-size: 1.2rem;
+    }
+
+    header .main-header .texts h1 span {
+        font-size: 1.2rem;
+    }
+
+    header .main-header .texts span {
+        font-size: .9rem;
+    }
+
+    header .main-header .container-filters {
+        width: 70%;
+        gap: 10px;
+        height: 10rem;
+    }
+
+    header .main-header .container-filters .tipo select {
+        height: 35px;
+    }
+
+    header .main-header .container-filters .tipo input {
+        height: 35px;
+    }
+
+    #buscarBtn {
+        height: 35px;
+    }
+
+    #limparFiltrosBtn {
+        height: 35px;
+    }
+}
