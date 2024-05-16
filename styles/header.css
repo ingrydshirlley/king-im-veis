@@ -139,7 +139,7 @@ header .main-header .container-filters .tipo input {
     padding-left: 15px;
 }
 
-#input-bairro-cidade {
+#input-cidade {
     width: 370px;
 }
 
@@ -251,7 +251,7 @@ header .main-header .container-filters .botao {
         padding-left: 10px;
     }
 
-    #input-bairro-cidade {
+    #input-cidade {
         width: 65%;
     }
 
@@ -388,36 +388,82 @@ header .main-header .container-filters .botao {
     }
 
     header .main-header .texts h1 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     header .main-header .texts h1 span {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     header .main-header .texts span {
-        font-size: .9rem;
+        font-size: .8rem;
     }
 
     header .main-header .container-filters {
         width: 70%;
         gap: 10px;
         height: 10rem;
+        align-items: center;
+        padding-top: 30px;
+        background-color: transparent;
+    }
+
+    header .main-header .container-filters .tipo {
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        gap: 10px;
     }
 
     header .main-header .container-filters .tipo select {
-        height: 35px;
+        height: 30px;
+    }
+
+    #select-tipo-imovel {
+        width: 100%;
+    }
+    
+    #select-categoria-imovel {
+        width: 100%;
     }
 
     header .main-header .container-filters .tipo input {
-        height: 35px;
+        height: 30px;
     }
 
     #buscarBtn {
-        height: 35px;
+        height: 30px;
     }
 
     #limparFiltrosBtn {
-        height: 35px;
+        height: 30px;
     }
+
+    header .main-header .container-filters .botao {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    header .top-header {
+        padding: 10px 2rem 10px 2rem;
+    }
+
+    header .main-header {
+        padding: 0px 2rem 0px 2rem;
+    }
+
+    header .main-header .texts {
+        width: 100%;
+    }
+
+    header .main-header .container-filters {
+        width: 100%;
+        height: 10rem;
+        padding-top: 20px;
+        padding: 0px;
+    }
+
 }

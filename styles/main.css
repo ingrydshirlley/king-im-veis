@@ -88,3 +88,69 @@
 .box-informations div i {
     color: #207FEE;
 }
+
+
+
+
+@media screen and (max-width: 1470px) {
+    #app {
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        padding: 4rem 7rem 4rem 7rem;
+    }
+
+    .casa-box {
+        max-width: 240px;
+        height: 340px;
+    }
+}
+
+@media screen and (max-width: 1325px) {
+    #app {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .casa-box {
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    #app {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        padding: 4rem 5rem 4rem 5rem;
+    } 
+
+    .box-image {
+        height: 58%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    #app {
+        top: 25rem;
+        padding-top: 5rem;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    } 
+
+    .casa-box {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    #app {
+        top: 22rem;
+    } 
+}
+
+@media screen and (max-width: 785px) {
+    #app {
+        padding: 4rem 4rem 4rem 4rem;
+    } 
+}
+
+@media screen and (max-width: 475px) {
+    #app {
+        padding: 4rem 2rem 4rem 2rem;
+    } 
+}
