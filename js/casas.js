@@ -76,7 +76,6 @@ function openModal(casa) {
     }, 100);
 }
 
-
 function mudarImagem(n, carousel) {
     const slides = carousel.getElementsByClassName('carousel-slide');
     let currentIndex = 0;
@@ -95,7 +94,6 @@ function mudarImagem(n, carousel) {
     }
     slides[currentIndex].style.display = 'block';
 }
-
 
 function closeModal() {
     const modal = document.getElementById('myModal');
@@ -152,8 +150,16 @@ casas.forEach(casa => {
     boxInformations.appendChild(endereco);
 
     const detalhes = document.createElement('div');
+
+    let comodosHTML = '';
+    if (casa.ambientes) {
+        comodosHTML = `<span><i class="fa-solid fa-door-open"></i>: ${casa.ambientes} cômodos(s)</span>`;
+    } else {
+        comodosHTML = ``;
+    }
+
     detalhes.innerHTML = `
-        <span><i class="fa-solid fa-door-open"></i>: ${casa.ambientes} ambientes</span>
+        <span>${comodosHTML}</span>
         <span><i class="fa-solid fa-vector-square"></i>: ${casa.metros}m²</span>
     `;
     boxInformations.appendChild(detalhes);
