@@ -451,6 +451,21 @@ header .main-header .container-filters .botao {
         padding: 10px 2rem 10px 2rem;
     }
 
+    header .top-header .logo {
+        font-size: .7rem
+    }
+    
+    header .top-header nav .contact {
+        padding: 3px 3px 3px 3px;
+        font-size: 12px;
+        width: 90px;
+        height: 25px;
+    }
+
+    header .top-header nav .contact:hover {
+        font-size: 12px;
+    }
+
     header .main-header {
         padding: 0px 2rem 0px 2rem;
     }
