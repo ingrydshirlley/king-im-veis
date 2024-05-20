@@ -13,8 +13,6 @@ function openModal(casa) {
         carouselHTML += `<div class="carousel-controls">`;
         carouselHTML += `<a class="prev" onclick="mudarImagem(-1, this.parentElement.parentElement)">&#10094;</a>`;
         carouselHTML += `<a class="next" onclick="mudarImagem(1, this.parentElement.parentElement)">&#10095;</a>`;
-
-
         carouselHTML += '</div>';
         carouselHTML += '</div>';
     }
@@ -116,65 +114,99 @@ window.addEventListener('click', (event) => {
     }
 });
 
+function renderCasas(casas) {
+    const app = document.getElementById('app');
+    app.innerHTML = '';
 
-casas.forEach(casa => {
-    const casaBox = document.createElement('div');
-    casaBox.classList.add('casa-box');
+    casas.forEach(casa => {
+        const casaBox = document.createElement('div');
+        casaBox.classList.add('casa-box');
 
-    const boxImage = document.createElement('div');
-    boxImage.classList.add('box-image');
+        const boxImage = document.createElement('div');
+        boxImage.classList.add('box-image');
 
-    const img = document.createElement('img');
-    img.src = casa.foto;
-    img.alt = 'Foto do Imóvel';
+        const img = document.createElement('img');
+        img.src = casa.foto;
+        img.alt = 'Foto do Imóvel';
 
-    boxImage.appendChild(img);
+        boxImage.appendChild(img);
 
-    casaBox.appendChild(boxImage);
+        casaBox.appendChild(boxImage);
 
-    const boxInformations = document.createElement('div');
-    boxInformations.classList.add('box-informations');
+        const boxInformations = document.createElement('div');
+        boxInformations.classList.add('box-informations');
 
-    const tipoCasa = document.createElement('p');
-    tipoCasa.classList.add('tipo-casa');
-    tipoCasa.textContent = casa.tipo;
-    boxInformations.appendChild(tipoCasa);
+        const tipoCasa = document.createElement('p');
+        tipoCasa.classList.add('tipo-casa');
+        tipoCasa.textContent = casa.tipo;
+        boxInformations.appendChild(tipoCasa);
 
-    const descricao = document.createElement('h2');
-    descricao.textContent = casa.descricao;
-    boxInformations.appendChild(descricao);
+        const descricao = document.createElement('h2');
+        descricao.textContent = casa.descricao;
+        boxInformations.appendChild(descricao);
 
-    const preco = document.createElement('p');
-    preco.classList.add('preco');
-    preco.textContent = `R$ ${casa.preco.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`;
-    boxInformations.appendChild(preco);
+        const preco = document.createElement('p');
+        preco.classList.add('preco');
+        preco.textContent = `R$ ${casa.preco.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`;
+        boxInformations.appendChild(preco);
 
-    const endereco = document.createElement('p');
-    endereco.classList.add('endereco');
-    endereco.textContent = `${casa.cidade}, ${casa.estado}`;
-    boxInformations.appendChild(endereco);
+        const endereco = document.createElement('p');
+        endereco.classList.add('endereco');
+        endereco.textContent = `${casa.cidade}, ${casa.estado}`;
+        boxInformations.appendChild(endereco);
 
-    const detalhes = document.createElement('div');
+        const detalhes = document.createElement('div');
 
-    let comodosHTML = '';
-    if (casa.ambientes) {
-        comodosHTML = `<span><i class="fa-solid fa-door-open"></i>: ${casa.ambientes} cômodos(s)</span>`;
-    } else {
-        comodosHTML = ``;
-    }
+        let comodosHTML = '';
+        if (casa.ambientes) {
+            comodosHTML = `<span><i class="fa-solid fa-door-open"></i>: ${casa.ambientes} cômodos(s)</span>`;
+        } else {
+            comodosHTML = ``;
+        }
 
-    detalhes.innerHTML = `
-        <span>${comodosHTML}</span>
-        <span><i class="fa-solid fa-vector-square"></i>: ${casa.metros}m²</span>
-    `;
-    boxInformations.appendChild(detalhes);
+        detalhes.innerHTML = `
+            <span>${comodosHTML}</span>
+            <span><i class="fa-solid fa-vector-square"></i>: ${casa.metros}m²</span>
+        `;
+        boxInformations.appendChild(detalhes);
 
-    casaBox.appendChild(boxInformations);
-    casaBox.addEventListener('click', () => {
-        openModal(casa);
+        casaBox.appendChild(boxInformations);
+        casaBox.addEventListener('click', () => {
+            openModal(casa);
+        });
+
+        app.appendChild(casaBox);
+    });
+}
+
+// Renderiza as casas inicialmente
+renderCasas(casas);
+
+document.getElementById('buscarBtn').addEventListener('click', function() {
+    // Captura os valores dos filtros
+    const tipo = document.getElementById('select-tipo-imovel').value;
+    const categoria = document.getElementById('select-categoria-imovel').value;
+    const cidade = document.getElementById('input-cidade').value.toLowerCase();
+
+    // Filtra os imóveis conforme os critérios selecionados
+    const filteredCasas = casas.filter(casa => {
+        let tipoMatch = !tipo || casa.tipo.toLowerCase() === tipo.toLowerCase();
+        let categoriaMatch = !categoria || casa.categoria.toLowerCase() === categoria.toLowerCase();
+        let cidadeMatch = !cidade || casa.cidade.toLowerCase().includes(cidade);
+
+        return tipoMatch && categoriaMatch && cidadeMatch;
     });
 
-    document.getElementById('app').appendChild(casaBox);
+    // Atualiza a lista de imóveis exibidos na página
+    renderCasas(filteredCasas);
 });
 
+document.getElementById('limparFiltrosBtn').addEventListener('click', function() {
+    // Limpa os valores dos filtros
+    document.getElementById('select-tipo-imovel').value = '';
+    document.getElementById('select-categoria-imovel').value = '';
+    document.getElementById('input-cidade').value = '';
 
+    // Recarrega todos os imóveis
+    renderCasas(casas);
+});
