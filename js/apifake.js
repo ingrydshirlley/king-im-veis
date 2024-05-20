@@ -1,4 +1,5 @@
 const casas = [
+  //Casa c/ Piscina St. Bábara
   {
     id: 1,
     foto: "https://i.ibb.co/10KkH0Q/msg-4149570142-1884.jpg",
@@ -42,24 +43,25 @@ const casas = [
     ]
   },
 
+  //Apto. em Interlagos
   {
     id: 2,
     foto: "https://i.ibb.co/q1SKc1P/msg-4149570142-1890.jpg",
     descricao: 'Apto. em Interlagos',
-    preco: 320000,
+    preco: 300000,
     tipo: 'Compra',
-    referencia: 'Ao lado do Kartodromo',
+    referencia: 'Ao lado do Kartodromo de Interlagos',
     cidade: 'Interlagos',
     estado: 'SP',
     bairro: '',
     rua: '',
     cep: '',
-    ambientes: "3",
-    dormitorios: "",
+    ambientes: "6",
+    dormitorios: "2",
     metros: "60",
     video: './img/casa6.avif',
     categoria: "Apartamento",
-    garagem: "",
+    garagem: "1",
     observação: "",
     fotos: [
       "https://i.ibb.co/cvYPnrd/msg-4149570142-1885.jpg",
@@ -71,6 +73,7 @@ const casas = [
     ]
   },
 
+  //Apto. Térreo Jandira
   {
     id: 3,
     foto: "https://i.ibb.co/Y8Bg2YC/msg-4149570142-1892.jpg",
@@ -101,6 +104,7 @@ const casas = [
     ]
   },
 
+  //Salão Comercial Jandira
   {
     id: 4,
     foto: "https://i.ibb.co/HFyVV3k/msg-4149570142-1939.jpg",
@@ -132,6 +136,7 @@ const casas = [
     ]
   },
 
+  //Chácara em Mairinque
   {
     id: 5,
     foto: "https://i.ibb.co/XCyJV13/msg-4149570142-1926.jpg",

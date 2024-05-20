@@ -19,6 +19,27 @@ function openModal(casa) {
         carouselHTML += '</div>';
     }
 
+    let enderecoHTML = '';
+    if (casa.referencia) {
+        enderecoHTML = `<p>${casa.referencia}</p>`;
+    } else {
+        enderecoHTML = `<p>${casa.rua}, ${casa.bairro} - ${casa.cidade} / ${casa.estado} - CEP: ${casa.cep}</p>`;
+    }
+
+    let garagemHTML = '';
+    if (casa.garagem) {
+        garagemHTML = `<i class="fa-solid fa-car"></i>: ${casa.garagem}</span>`;
+    } else {
+        garagemHTML = "";
+    }
+
+    let quartoHTML = '';
+    if (casa.dormitorios) {
+        quartoHTML = `<span><i class="fa-solid fa-vector-square"></i>: ${casa.dormitorios} dormitórios</span>`;
+    } else {
+        quartoHTML = "";
+    }
+
     const modalHTML = `
     ${carouselHTML} 
         <div class="textos-modal"> 
@@ -26,7 +47,7 @@ function openModal(casa) {
             <h1 class="descricao-modal">${casa.descricao}</h1>
 
             <div class="endereco-modal">
-                <p>${casa.rua}, ${casa.bairro} - ${casa.cidade} / ${casa.estado} - CEP: ${casa.cep}</p>
+                ${enderecoHTML}
                 <p class="text_cep"></p>
             </div>
 
@@ -36,9 +57,10 @@ function openModal(casa) {
 
             <div class="geral-modal">
                 <span><i class="fa-solid fa-door-open"></i>: ${casa.ambientes} cômodos</span>
-                <span><i class="fa-solid fa-vector-square"></i>: ${casa.dormitorios} dormitórios</span>
+                <span>${quartoHTML}</span>
                 <span><i class="fa-solid fa-vector-square"></i>: ${casa.metros}m²</span>
-            </div>
+                <span>${garagemHTML}</span>
+                </div>
 
             <button class="botao-modal-contato">Mais informações deste imóvel!</button>
         </div>
@@ -51,7 +73,7 @@ function openModal(casa) {
     modal.style.display = 'flex';
     setTimeout(() => {
         modal.style.opacity = '1'; // Define a opacidade para 1 para suavizar a transição
-    }, 100); 
+    }, 100);
 }
 
 
