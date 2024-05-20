@@ -62,13 +62,18 @@ function openModal(casa) {
                 <span>${garagemHTML}</span>
                 </div>
 
-            <button class="botao-modal-contato">Mais informações deste imóvel!</button>
-        </div>
-
-        
+            <button id="botaoModal" class="botao-modal-contato" data-id="${casa.id}" data-nome="${casa.descricao}">Mais informações deste imóvel!</button>
+        </div>   
     `;
 
     modalBody.innerHTML = modalHTML;
+    document.getElementById('botaoModal').addEventListener('click', function() {
+        const casaId = this.getAttribute('data-id');
+        const casaNome = this.getAttribute('data-nome');
+        const message = `Olá! Gostaria de mais informações sobre este imóvel: ${casaNome}`;
+        const whatsappLink = `https://wa.me/5511940762958?text=${encodeURIComponent(message)}`;
+        window.open(whatsappLink, '_blank');
+    });
     modal.style.opacity = '0'
     modal.style.display = 'flex';
     setTimeout(() => {
