@@ -26,14 +26,24 @@ function openModal(casa) {
             <h1 class="descricao-modal">${casa.descricao}</h1>
 
             <div class="endereco-modal">
-                <p>${casa.rua}, ${casa.bairro} - ${casa.cidade} - ${casa.estado}</p>
-                <p>CEP: ${casa.cep}</p>
+                <p>${casa.rua}, ${casa.bairro} - ${casa.cidade} / ${casa.estado} - CEP: ${casa.cep}</p>
+                <p class="text_cep"></p>
             </div>
 
             <div class="preco-modal">
-                <p>R$ ${casa.preco.toLocaleString('pt-BR', { minimumFractionDigits: 2 })},00</p>
+                <p>R$ ${casa.preco.toLocaleString('pt-BR')},00</p>
             </div>
+
+            <div class="geral-modal">
+                <span><i class="fa-solid fa-door-open"></i>: ${casa.ambientes} cômodos</span>
+                <span><i class="fa-solid fa-vector-square"></i>: ${casa.dormitorios} dormitórios</span>
+                <span><i class="fa-solid fa-vector-square"></i>: ${casa.metros}m²</span>
+            </div>
+
+            <button class="botao-modal-contato">Mais informações deste imóvel!</button>
         </div>
+
+        
     `;
 
     modalBody.innerHTML = modalHTML;
