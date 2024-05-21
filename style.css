@@ -39,7 +39,7 @@ button#verMaisBtn:hover {
     background-color: #1557a2;
 }
 
-button#topo {
+#topo {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -49,12 +49,14 @@ button#topo {
     border-radius: 50%;
     font-size: 16px;
     width: 50px;
-    transition: all .1s ease-in;
     height: 50px;
     cursor: pointer;
+    display: none; /* Inicialmente oculto */
+    justify-content: center;
+    align-items: center;
 }
 
-button#topo:hover {
+#topo:hover {
     background-color: #1557a2;
     font-size: 18px;
 }
