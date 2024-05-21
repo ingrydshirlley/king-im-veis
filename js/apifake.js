@@ -222,10 +222,10 @@ const casas = [
     ]
   },
 
-  //casa no Fátima, condomínio fechado
+  //Apto Di Roma
   {
     id: 7,
-    foto: "https://i.ibb.co/4WL8HPM/Imagem-do-Whats-App-de-2024-05-19-s-22-03-52-2b2386f2.jpg", 
+    foto: "https://i.ibb.co/0rHZJ20/Imagem-do-Whats-App-de-2024-05-20-s-16-20-20-a2362aab.jpg",
     descricao: 'Apto. Jd. Sol Nascente',
     preco: 250000,
     tipo: 'Compra',
@@ -243,23 +243,35 @@ const casas = [
     garagem: "1",
     observação: "",
     fotos: [
-      "https://i.ibb.co/4WL8HPM/Imagem-do-Whats-App-de-2024-05-19-s-22-03-52-2b2386f2.jpg",
-      "https://i.ibb.co/x22TPkP/Imagem-do-Whats-App-de-2024-05-19-s-22-03-53-27d986c1.jpg",
-      "https://i.ibb.co/Z29N0tQ/Imagem-do-Whats-App-de-2024-05-19-s-22-03-53-d26831a0.jpg",
-      "https://i.ibb.co/4WL8HPM/Imagem-do-Whats-App-de-2024-05-19-s-22-03-52-2b2386f2.jpg",
-      "https://i.ibb.co/zmW08K1/Imagem-do-Whats-App-de-2024-05-19-s-22-03-53-e36eb289.jpg",
-      "https://i.ibb.co/kGXyVr2/Imagem-do-Whats-App-de-2024-05-19-s-22-03-54-3c6bfbde.jpg",
-      "https://i.ibb.co/9nHXg6r/Imagem-do-Whats-App-de-2024-05-19-s-22-03-54-5db7126b.jpg",
-      "https://i.ibb.co/GVH3c4z/Imagem-do-Whats-App-de-2024-05-19-s-22-03-54-51fea8c5.jpg",
-      "https://i.ibb.co/ZH7gZnz/Imagem-do-Whats-App-de-2024-05-19-s-22-03-54-a4532419.jpg",
-      "https://i.ibb.co/L0bMV8B/Imagem-do-Whats-App-de-2024-05-19-s-22-03-54-ac1cfccb.jpg",
+      "https://i.ibb.co/q1XgyRd/Imagem-do-Whats-App-de-2024-05-20-s-16-20-12-8365f033.jpg",
+      "https://i.ibb.co/GHg4CSd/Imagem-do-Whats-App-de-2024-05-20-s-16-20-13-07c988d8.jpg",
+      "https://i.ibb.co/br4zZjQ/Imagem-do-Whats-App-de-2024-05-20-s-16-20-13-ed5dc2d4.jpg",
+      "https://i.ibb.co/mF188r5/Imagem-do-Whats-App-de-2024-05-20-s-16-20-14-51c38a52.jpg",
+      "https://i.ibb.co/TRg0qXb/Imagem-do-Whats-App-de-2024-05-20-s-16-20-14-57f8104b.jpg",
+      "https://i.ibb.co/sKRd16K/Imagem-do-Whats-App-de-2024-05-20-s-16-20-15-5ad4a887.jpg",
+      "https://i.ibb.co/hVxdxdn/Imagem-do-Whats-App-de-2024-05-20-s-16-20-15-1695d8be.jpg",
+      "https://i.ibb.co/hYXXD3B/Imagem-do-Whats-App-de-2024-05-20-s-16-20-15-d686c8e3.jpg",
+      "https://i.ibb.co/F4vj4vy/Imagem-do-Whats-App-de-2024-05-20-s-16-20-16-0d3986f6.jpg",
+      "https://i.ibb.co/f8BLDZC/Imagem-do-Whats-App-de-2024-05-20-s-16-20-16-1f9ff397.jpg",
+      "https://i.ibb.co/zrgkt7S/Imagem-do-Whats-App-de-2024-05-20-s-16-20-16-59af289b.jpg",
+      "https://i.ibb.co/cN8GfZ1/Imagem-do-Whats-App-de-2024-05-20-s-16-20-16-84f13e39.jpg",
+      "https://i.ibb.co/C0M4C8G/Imagem-do-Whats-App-de-2024-05-20-s-16-20-17-9e07d8a6.jpg",
+      "https://i.ibb.co/ncbcbRF/Imagem-do-Whats-App-de-2024-05-20-s-16-20-17-10c8ee64.jpg",
+      "https://i.ibb.co/bgtp8XV/Imagem-do-Whats-App-de-2024-05-20-s-16-20-17-29a0b02d.jpg",
+      "https://i.ibb.co/Q840r7q/Imagem-do-Whats-App-de-2024-05-20-s-16-20-17-d8e553cd.jpg",
+      "https://i.ibb.co/MN2zHzM/Imagem-do-Whats-App-de-2024-05-20-s-16-20-18-1a45fd1b.jpg",
+      "https://i.ibb.co/3dKfyfg/Imagem-do-Whats-App-de-2024-05-20-s-16-20-18-6bef45ae.jpg",
+      "https://i.ibb.co/XjvKCPG/Imagem-do-Whats-App-de-2024-05-20-s-16-20-18-47c1118c.jpg",
+      "https://i.ibb.co/dj3kFz0/Imagem-do-Whats-App-de-2024-05-20-s-16-20-18-b8062ae1.jpg",
+      "https://i.ibb.co/41MNzZC/Imagem-do-Whats-App-de-2024-05-20-s-16-20-19-40fe96b7.jpg",
+      "https://i.ibb.co/0rHZJ20/Imagem-do-Whats-App-de-2024-05-20-s-16-20-20-a2362aab.jpg",
     ]
   },
 
   //casa no Fátima, condomínio fechado
   {
     id: 8,
-    foto: "https://i.ibb.co/4WL8HPM/Imagem-do-Whats-App-de-2024-05-19-s-22-03-52-2b2386f2.jpg", 
+    foto: "https://i.ibb.co/4WL8HPM/Imagem-do-Whats-App-de-2024-05-19-s-22-03-52-2b2386f2.jpg",
     descricao: 'Casa no Fátima - Condomínio',
     preco: 300000,
     tipo: 'Compra',
