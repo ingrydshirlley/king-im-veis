@@ -226,7 +226,7 @@ const casas = [
   {
     id: 7,
     foto: "https://i.ibb.co/0rHZJ20/Imagem-do-Whats-App-de-2024-05-20-s-16-20-20-a2362aab.jpg",
-    descricao: 'Apto. Jd. Sol Nascente',
+    descricao: 'Apto. Condomínio Di Roma',
     preco: 250000,
     tipo: 'Compra',
     referencia: 'No condomínio Di Roma',
@@ -271,6 +271,40 @@ const casas = [
   //casa no Fátima, condomínio fechado
   {
     id: 8,
+    foto: "https://i.ibb.co/4WL8HPM/Imagem-do-Whats-App-de-2024-05-19-s-22-03-52-2b2386f2.jpg",
+    descricao: 'Casa no Fátima - Condomínio',
+    preco: 300000,
+    tipo: 'Compra',
+    referencia: 'Ao lado do Cemitério Municipal',
+    cidade: 'Jandira',
+    estado: 'SP',
+    bairro: '',
+    rua: '',
+    cep: '',
+    ambientes: "5",
+    dormitorios: "2",
+    metros: "60",
+    video: '',
+    categoria: "Apartamento",
+    garagem: "1",
+    observação: "",
+    fotos: [
+      "https://i.ibb.co/4WL8HPM/Imagem-do-Whats-App-de-2024-05-19-s-22-03-52-2b2386f2.jpg",
+      "https://i.ibb.co/x22TPkP/Imagem-do-Whats-App-de-2024-05-19-s-22-03-53-27d986c1.jpg",
+      "https://i.ibb.co/Z29N0tQ/Imagem-do-Whats-App-de-2024-05-19-s-22-03-53-d26831a0.jpg",
+      "https://i.ibb.co/4WL8HPM/Imagem-do-Whats-App-de-2024-05-19-s-22-03-52-2b2386f2.jpg",
+      "https://i.ibb.co/zmW08K1/Imagem-do-Whats-App-de-2024-05-19-s-22-03-53-e36eb289.jpg",
+      "https://i.ibb.co/kGXyVr2/Imagem-do-Whats-App-de-2024-05-19-s-22-03-54-3c6bfbde.jpg",
+      "https://i.ibb.co/9nHXg6r/Imagem-do-Whats-App-de-2024-05-19-s-22-03-54-5db7126b.jpg",
+      "https://i.ibb.co/GVH3c4z/Imagem-do-Whats-App-de-2024-05-19-s-22-03-54-51fea8c5.jpg",
+      "https://i.ibb.co/ZH7gZnz/Imagem-do-Whats-App-de-2024-05-19-s-22-03-54-a4532419.jpg",
+      "https://i.ibb.co/L0bMV8B/Imagem-do-Whats-App-de-2024-05-19-s-22-03-54-ac1cfccb.jpg",
+    ]
+  },
+
+  //casa no Fátima, condomínio fechado
+  {
+    id: 9,
     foto: "https://i.ibb.co/4WL8HPM/Imagem-do-Whats-App-de-2024-05-19-s-22-03-52-2b2386f2.jpg",
     descricao: 'Casa no Fátima - Condomínio',
     preco: 300000,
