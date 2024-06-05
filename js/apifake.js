@@ -300,5 +300,30 @@ const casas = [
       "https://i.ibb.co/ZH7gZnz/Imagem-do-Whats-App-de-2024-05-19-s-22-03-54-a4532419.jpg",
       "https://i.ibb.co/L0bMV8B/Imagem-do-Whats-App-de-2024-05-19-s-22-03-54-ac1cfccb.jpg",
     ]
+  },
+
+  //casa no centro ampla moderna
+  {
+    id: 9,
+    foto: "https://i.ibb.co/LQGjdZ4/Imagem-do-Whats-App-de-2024-06-05-s-14-19-51-469f41fe.jpg",
+    descricao: 'Casa no Centro',
+    preco: 300000,
+    tipo: 'Compra',
+    referencia: 'Valor referente a entrada. O restante aceita permuta em apartamentos, terrenos ou automóveis. Casa toda de granizo.',
+    cidade: '',
+    estado: '',
+    bairro: '',
+    rua: '',
+    cep: '',
+    ambientes: "12",
+    dormitorios: "4",
+    metros: "",
+    video: '',
+    categoria: "Casa",
+    garagem: "4",
+    observação: "",
+    fotos: [
+      "https://i.ibb.co/LQGjdZ4/Imagem-do-Whats-App-de-2024-06-05-s-14-19-51-469f41fe.jpg"
+    ]
   }
 ];

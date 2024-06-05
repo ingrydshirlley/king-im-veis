@@ -21,7 +21,7 @@ function openModal(casa) {
     if (casa.referencia) {
         enderecoHTML = `<p>${casa.referencia}</p>`;
     } else {
-        enderecoHTML = `<p>${casa.rua}, ${casa.bairro} - ${casa.cidade} / ${casa.estado} - CEP: ${casa.cep}</p>`;
+        enderecoHTML = `<p>${casa.rua}, ${casa.bairro} - ${casa.cidade} / ${casa.estado}</p>`;
     }
 
     let garagemHTML = '';
